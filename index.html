@@ -4,84 +4,137 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oliver Correa</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>Portafolio | Oliver</title>
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- css -->
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <div class="main-container">
-        <img src="img/myAvatar.svg" alt="Avatar">
 
-        <h1><i>José Maria Oliver Correa Cabana</i></h1>
-    
-        <p>Hola, soy estudiante de <b>Tecsup</b>, actualmente estoy cursando el tercer ciclo de la carrera <b>Diseño y Desarrollo de Software</b> en el que estoy aprendiendo nuevas tecnologías y lenguajes.</p>
-    
-        <h2>Me gusta</h2>
-        <video width="320" height="240" controls>
-          <source src="video/videoNaruto.mp4" type="video/mp4">
-        </video>
-    
-        <ul>
-          <li>Leer libros, ya sea físico o digital.</li>
-          <li>Escuchar música futurista y citypop.</li>
-          <li>Ver series y películas.</li>
-          <li>Ir al cine cada vez que puedo.</li>
-          <li>Aprender idiomas.</li>
-          <li>El anime.</li>
-        </ul>
-        
-        <h2>Lenguajes de Programación</h2>
-        <ul>
-          <li>Python</li>
-          <li>Java</li>
-          <li>JavaScript</li>
-        </ul>
-        <h2>Tecnologías</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>SQL</li>
-          <li>NoSQL</li>
-        </ul>
-    
-        <h2>Formación académica</h2>
-        <ul>
-          <li>Estudiante de Tecsup.</li>
-          <li>Cursando cursos virtuales.</li>
-        </ul>
-    
-        <h2>Idiomas</h2>
-        <ul>
-          <li>Español (avanzado)</li>
-          <li>Inglés (intermedio)</li>
-          <li>Japones (básico)</li>
-        </ul>
-        <audio controls>
-            <source src="audio/Grabación.m4a" type="audio/mpeg">
-        </audio>
-        
-        <h3>Email</h3>
-        <table border="2">
-            <tr>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Email</th>
-            </tr>
-            <tr>
-                <td>José</td>
-                <td>Correa</td>
-                <td>josecorrea@gmail.com</td>
-            </tr>
-        </table>
-        <h3>Envíame un mensaje de forma más fácil</h3>
-        <form>
-            <label for="correo">Correo:</label><br/>
-            <input type="text" id="correo" name="correo" placeholder="Escribe tu correo" required="true"><br/>
-    
-            <label for="mensaje">Mensaje:</label><br/>
-            <input type="text" id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" required="true"><br/>
-            <input type="submit" value="Enviar">
-            <input type="submit" formnovalidate="formnovalidate" value="Enviar sin validar"> 
+    <!-- Diseño de cabecera -->
+    <header class="header">
+        <a href="#" class="logo">Portafolio.</a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Principal</a>
+            <a href="#about">Sobre mi</a>
+            <a href="#services">Servicios</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+
+        <div class="bx bx-code-block" id="Icono"></div>
+    </header>
+    <!-- Diseño de la parte principal -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hola, Soy</h3>
+            <h1>Oliver Correa</h1>
+            <p>Actualmente estoy cursando el tercer ciclo de la carrera Diseño y Desarrollo de Software. Desde que inicié mi carrera, me he enfocado en aprender nuevas tecnologías y lenguajes de programación, tales como Python, Java, y JavaScript. Además, he adquirido experiencia en tecnologías web como HTML, CSS, SQL y NoSQL.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
+                <a href="https://twitter.com/"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.instagram.com/"><i class='bx bxl-instagram-alt'></i></a>
+            </div>
+        </div>
+
+        <div class="profession-container">
+            <div class="profession-box">
+                <div class="profession" style="--i:0;">
+                    <i class='bx bx-code-curly'></i>
+                    <h3>Programador</h3>
+                </div>
+                <div class="profession" style="--i:1;">
+                    <i class='bx bx-user-voice'></i>
+                    <h3>Bilingüe</h3>
+                </div>
+                <div class="profession" style="--i:2;">
+                    <i class='bx bxl-python' ></i>
+                    <h3>Python</h3>
+                </div>
+                <div class="profession" style="--i:3;">
+                    <i class='bx bxl-java' ></i>
+                    <h3>Java PC-Movile</h3>
+                </div>
+
+                <div class="circle"></div>
+            </div>
+
+            <div class="overlay"></div>
+        </div>
+
+        <div class="home-img">
+            <img src="images/me.png" alt="">
+        </div>
+    </section>
+
+    <!-- Sobre el diseño de sección -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/leyendo.png" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">Acerca de <span>Mi</span></h2>
+            <h3>Hola, aqui tienes más información sobre mi.</h3>
+            <p>Me considero una persona muy curiosa y siempre estoy buscando nuevas oportunidades para aprender y mejorar. Una de mis pasiones es la lectura, ya sea física o digital, y disfruto de diversos géneros literarios. También me apasiona la música futurista y citypop, lo que me ha llevado a descubrir nuevas culturas y tendencias.</p>
+            <p>Soy un gran aficionado de las series y películas, y me encanta ir al cine cada vez que puedo. También me interesa mucho el anime, lo que me ha llevado a aprender el idioma japonés.</p>
+            <p>En cuanto a mis habilidades lingüísticas, hablo español con fluidez, tengo un nivel intermedio de inglés y conocimientos básicos de japonés.</p>
+            <p>Mi enfoque es siempre trabajar de manera colaborativa, aprender de los demás y aportar mi experiencia y conocimientos. Si estás buscando un miembro para un equipo de trabajo que esté comprometido con la mejora continua y el desarrollo de proyectos innovadores, no dudes en contactarme. ¡Estoy emocionado/a por seguir creciendo y aprendiendo junto a ti!</p>
+        </div>
+    </section>
+
+    <!-- Diseño de la sección servicios -->
+    <section class="services" id="services">
+        <h2 class="heading">Mis <span>Servicios</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-laptop' ></i>
+                <h3>Software para PC</h3>
+                <p>Puedo crear diferentes programas enfocados a las computadoras utilizando diferentes lenguajes de programación y con el paradigma de progrmación POO.</p>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-user-voice'></i>
+                <h3>Traductor</h3>
+                <p>Puedo hablar el ingles fluidamnete por lo que estoy seguro de que puedo traducir del ingles al español y viciversa en el momento.</p>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-car'></i>
+                <h3>Conductor</h3>
+                <p>Tengo gran experiencia siendo conductor habiendo hecho viajes interregionales de Arequipa a Puno y Moquegua. Por el momento tengo licencia A I.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diseño de la sección de contacto -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contácta<span>me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Nombre">
+                <input type="email" placeholder="Dirección e-mail">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Número de teléfono">
+                <input type="text" placeholder="Asunto del e-mail">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje"></textarea>
+            <input type="submit" value="Enviar" class="btn">
         </form>
-    </div>      
+    </section>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- configuracion de js -->
+    <script src="js/script.js"></script>
 </body>
 </html>
+
+
+
+
+
+ 
